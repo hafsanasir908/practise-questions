@@ -1,282 +1,461 @@
 #include<stdio.h>
+#include<string.h>
 int main(void)
 {
-	//input and print all elements
+	//WAP to store roll no and marks obtained by 4 students side
 	
-//	int a[5];
-//	printf("enter elements\n");
-//	for(int i = 0 ; i < 5 ; i++)
-//	{
-//		scanf("%d",&a[i]);
-//	}
-//	//printing
+//	int arr[4][2];
+//	printf("Enter marks and roll : \n");
 //	
-//	for(int i = 0 ; i < 5 ; i++)
+//	for(int i = 0 ; i < 4 ; i++)
 //	{
-//		printf("%d",a[i]);
-//	}
-
-//***************************************************
-	
-	//sum of all elements in an array
-	
-//	int a[5];
-//	int sum = 0;
-//	printf("enter elements\n");
-//	for(int i = 0 ; i < 5 ; i++)
-//	{
-//		scanf("%d",&a[i]);
-//	}
-//	//printing
-//	
-//	for(int i = 0 ; i < 5 ; i++)
-//	{
-//		sum = sum + a[i];
-//		
-//	}
-//	printf("%d",sum);
-
-
-//********************************************************************
-
-   //max value
-   
-//   int a[10];
-//   printf("enter elements\n");
-//   for(int i = 0 ; i < 9 ; i++)
-//   {
-//   	scanf("%d",&a[i]);
-//   }
-//   
-//   int max = -1;
-//   for(int i = 0 ; i < 9 ; i++)
-//   {
-//   	if(max < a[i])
-//   	{
-//   		max = a[i];
-//	   }
-//   }
-//    printf("max value is : %d",max);
-
-//*****************************************************************
-
-//second max;
-
-//   int a[10];
-//   printf("enter elements\n");
-//   for(int i = 0 ; i < 9 ; i++)
-//   {
-//   	scanf("%d",&a[i]);
-//   }
-//   
-//   int max = -1;
-//   for(int i = 0 ; i < 10 ; i++)
-//   {
-//   	if(max < a[i])
-//   	{
-//   		max = a[i];
-//	   }
-//   }
-//   
-//   int smax = a[0];
-//   for(int j = 1; j < 10 ; j++)
-//   {
-//   	
-//   	if(a[j] > smax && a[j] < max)
-//   	{
-//   		smax = a[j];
-//	   }
-//   }
-//    printf("smax value is : %d",smax);
-//   ****************************************************************
-
-//count even num
-
-//   int a[10];
-//   int count = 0;
-//   for(int i = 0; i < 10; i++)
-//   {
-//   	scanf("%d",&a[i]);
-//	      
-//		  }
-//		  
-//		  int max = a[0];
-//		 for(int i =0; i < 10; i++)
-//		 {
-//		 	if(a[i] % 2 == 0)
-//		 	{
-//		 		count++;
-//			 }
-//		  } 
-//		  printf("total num of even num is : %d",count);
-
-//******************************************************************
-
-//to search for a specific element
-   
-//    int a[10] = {1,2,3,4,5,6,7,8,9,10};
-//    int x = 4;
-//    
-//    for(int i = 0; i < 10 ; i++)
-//    {
-//    	if(a[i] == x)
-//    	{
-//    		printf("%d is present in the array and its index is %d",a[i],i);
-//    		break;
+//		for(int j = 0; j < 2 ; j++)
+//		{
+//			scanf("%d",&arr[i][j]);
 //		}
 //	}
- //*****************************************************************************
- 
- //min value
- 
-// int a[10];
-// printf("enter elements");
-// for(int i = 0; i < 10 ; i++)
-// {
-// 	scanf("%d",&a[i]);
-// }
-// 
-// int min = a[0];
-// for(int i = 0; i < 10; i++)
-// {
-// 	if(a[i] < min)
-// 	{
-// 		min = a[i];
-//	 }
-// }
-// 
-// printf("min value is : %d",min);
+//
+//	printf("roll no   :  marks \n");
+//	
+//	for(int i = 0 ; i < 4 ; i++)
+//	{
+//		for(int j = 0; j < 2 ; j++)
+//		{
+//			printf("%d\t\t",arr[i][j]);
+//		}
+//		printf("\n");
+//	}
 
-//*******************************************************************************
 
-//to find avg
+//--------------------------------------------------------------------
 
-//   int a[10];
-//    printf("enter elements\n");
-// for(int i = 0; i < 10 ; i++)
-// {
-// 	scanf("%d",&a[i]);
-// }
+//to store 10 at every index of a 2d matrix
+
+//int arr[5][5];
+//
+//for(int i = 0 ; i < 5 ; i++)
+//{
+//	for(int j = 0; j < 5 ; j++)
+//	{
+//		arr[i][j] = 10;
+//		printf("%d ",arr[i][j]);
+//	}
+//	printf("\n");
+//}
+
+//-----------------------------------------------------------------------
+
+//to add 2 matrices
+
+//int r1 = 3 , c1 = 3; 
+//int r2 = 3 , c2 = 3; 
+//
+//int a[r1][c1];
+//int b[r2][c2];
+//
+//printf("enter elements of matrix 1 \n");
+//
+//for(int i = 0 ; i < r1 ; i++)
+//{
+//	for(int j = 0; j < c1 ; j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+//
+//printf("enter elements of matrix 2 \n");
+//
+//for(int i = 0 ; i < r2 ; i++)
+//{
+//	for(int j = 0; j < c2 ; j++)
+//	{
+//		scanf("%d",&b[i][j]);
+//	}
+//	
+//}
+//
+//int res[r1][c2];
+//
+//printf("addition is \n");
+//for(int i = 0; i < r1; i++)
+//{
+//	for(int j = 0; j < c2 ; j++)
+//	{
+//		res[i][j] = a[i][j] + b[i][j];
+//		printf("%d ",res[i][j]);
+//	}
+//	printf("\n");
+//}
+
+//--------------------------------------------------------------------
+
+//find the sum of elements in a 2d array
+//int r , c;
+//
+//printf("enter no of rows and  col : ");
+//scanf("%d %d",&r,&c);
+//
+//int a[r][c];
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		printf("%d",a[i][j]);
+//	}
+//	printf("\n");
+//}
 // 
 // int sum = 0;
-// float avg;
-// 
-// for(int i = 0 ; i < 10 ; i++)
+// for(int i = 0; i < r; i++)
 // {
-// 	sum = sum + a[i];
-// }
-//   avg = sum / 10;
-//   printf("sum is : %d\n",sum);
-//   printf("avg is : %f",avg);
-
-//***************************************************************
-
- //reverse
-// int a[10] = {1,2,3,4,5,6,7,8,9,10};
-//  printf("enter elements");
-// for(int i = 0; i < 10 ; i++)
-// {
-// 	scanf("%d",&a[i]);
-// }
-// 
-// for(int i = 9; i >=  0; i--)
-// {
-// 	printf("%d ",a[i]);
-// }
- 
- 
- //********************************************************************
- 
- //palindrome
-//    int n;
-// 	int palindrome = 1;
-// 	printf("enter num of elements\n");
-// 	scanf("%d",&n);
-// 	int a[n];
-// 	printf("enter elements\n");
-// 	for(int i  = 0 ; i < n ; i++)
+// 	for(int j = 0; j < c; j++)
 // 	{
-// 		scanf("%d",&a[i]);
+// 		sum = sum + a[i][j];
 //	 }
-//	 
-//	 int i = 0;
-//	int j = n - 1;
-//	 
-//	 while(i < j)
-//	 {
-//	 	if(a[i] != a[j]){
-//	 		palindrome = 0;
-//	 		break;
-//		 }
-//		 
-//		 i++;
-//		 j--;
-//			 }
-//			 if(palindrome == 1)
-//			 {
-//			 	printf("it is a palindrome\n");
-//			 }
-//			 else{
-//			 	printf("it is not a palindrome\n");
-//			 }
-// ******************************************************************
+// }
+// 
+// printf("sum of elements is %d",sum);
 
-//count pairs
+//--------------------------------------------------------------------
 
-//  int a[10] = {1,2,3,4,5,6,7,8,9,10};
-//  int x = 12;
-//  int count = 0;
-//  
-//  for(int i = 0 ; i < 10 ; i++)
-//  {
-//  	for(int j = i + 1 ; j < 10 ; j++)
-//  	{
-//  		if(a[i] + a[j] == x)
-//  		{
-//  			count++;
-//  			printf("pair found (%d , %d)\n",a[i],a[j]);
-//		  }
-//		  if(i == j)
-//	  {
-//	  	continue;
-//	  }
-//	  }
-//	  
-//	  
-//	  
-//  }
-//  printf("total pairs are : %d",count);
-  
-  //****************************************************************
-  
-  //count triplets
-  
-  int a[10] = {1,2,3,4,5,6,7,8,9,10};
-  int x = 12;
-  int count = 0;
-  
-  for(int i = 0 ; i < 10 ; i++)
-  {
-  	for(int j = i + 1 ; j < 10 ; j++)
-  	{
-  		for(int k = j +1 ; k < 10 ; k++)
-  		{
-  			if(a[i] + a[j] + a[k] == x)
-  			{
-  				printf("triplet found (%d,%d,%d)\n",a[i],a[j],a[k]);
-  				count++;
-			  }
-			  if(i == j == k)
-			  {
-			  	break;
-			  }
-		  }
-  	}
-	  }
- 
-    printf("triplets are : %d",count);
- 
+//max element 
+
+//int r , c;
+//
+//printf("enter no of rows and  col : ");
+//scanf("%d %d",&r,&c);
+//
+//int a[r][c];
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		printf("%d ",a[i][j]);
+//	}
+//	printf("\n");
+//}
+//
+//int max = -1;
+//
+//for(int i =0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		if(a[i][j] > max)
+//		{
+//			max = a[i][j];
+//		}
+//	}
+//}
+//
+//printf("max is : %d ",max);
+
+
+//-------------------------------------------------------------
+
+//min value
+
+//int r , c;
+//
+//printf("enter no of rows and  col : ");
+//scanf("%d %d",&r,&c);
+//
+//int a[r][c];
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		printf("%d ",a[i][j]);
+//	}
+//	printf("\n");
+//}
+//
+//int min= a[0][0];
+//
+//for(int i =0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		if(a[i][j] < min)
+//		{
+//			min = a[i][j];
+//		}
+//	}
+//}
+//
+//printf("min is : %d ",min);
+
+//----------------------------------------------------------
+
+//max sum row
+
+//int r , c;
+//
+//printf("enter no of rows and  col : ");
+//scanf("%d %d",&r,&c);
+//
+//int a[r][c];
+//int maxsum = -1;
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+//
+//for(int i = 0; i < r; i++)
+//{
+//	int sum = 0;
+//	for(int j = 0; j < c; j++)
+//	{
+//		sum = sum + a[i][j];
+//		
+//	}
+//	printf("sum of row %d is %d\n",i,sum);
+//	
+//	if(sum > maxsum)
+//    {
+//        maxsum = sum;
+//    }
+//
+//}
+//
+//printf("max sum is : %d",maxsum);
 	
+	
+	//----------------------------------------------------------
+	
+	//find row with max num if 1s
+	
+//	int a[3][3];
+//	
+//		int maxcount = -1;
+//		
+//		
+//	
+//	printf("enter elements with 0s and 1s\n");
+//	
+//	for(int i = 0 ; i < 3 ; i++)
+//	{
+//		for(int j = 0; j < 3; j++)
+//		{
+//			scanf("%d",&a[i][j]);
+//		}
+//	}
+//	
+//	for(int i = 0; i < 3; i++)
+//	{
+//		int count = 0;
+//		int rowindex = 0;
+//		
+//		for(int j = 0; j < 3; j++)
+//		{
+//			if(a[i][j] == 1)
+//			{
+//				count++;
+//				
+//			}
+//			if(count > maxcount)
+//			{
+//				maxcount = count;
+//				
+//				
+//			}
+//		}
+//		
+//	}
+//	
+//	 printf("max num of 1 in row  : %d",maxcount);
+//
+//------------------------------------------------------------------
+
+//int r , c;
+//printf("enter number of rows and col : ");
+//scanf("%d %d",&r , &c);
+//
+//int a[r][c];
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c;j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+//printf("transpose is \n");
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = 0; j < c;j++)
+//	{
+//		printf("%d",a[j][i]);
+//	}
+//	printf("\n");
+//}
+
+
+//------------------------------------------------------------
+
+//to print the tranpose of nxn by swapping
+
+//int r  ,c ;
+//printf("enter num of rows and col : ");
+//scanf("%d %d",&r , &c);
+//int a[r][c];
+//
+//
+//for(int i = 0; i < r; i++)
+//{
+//	for(int j = i; j < c; j++)
+//	{
+//		scanf("%d",&a[i][j]);
+//	}
+//}
+//
+////transpose
+//
+//for(int i =0; i < r; i++)
+//{
+//	for(int j = 0; j < c; j++)
+//	{
+//		int temp = a[i][j];
+//		a[i][j]  = a[j][i];
+//		a[j][i] = temp;
+//	}
+//}
+//
+//
+////output
+//
+//for(int i = 0 ; i < r; i++)
+//{
+//	for(int j = 0;  j < c; j++)
+//	{
+//		printf("%d ",a[i][j]);
+//	}
+//	printf("\n");
+//}
+
+
+//---------------------------------------------------------
+
+//multiplication table
+
+int r1  , c1;
+printf("enter num of rows of matrix 1 : ");
+scanf("%d",&r1);
+
+printf("enter num of col of matrix 1 : ");
+scanf("%d",&c1);
+
+int a[r1][c1];
+
+printf("enter elements of matrix 1 \n");
+
+for(int i = 0; i < r1; i++)
+{
+	for(int j = 0; j < c1 ; j++)
+	{
+		scanf("%d",&a[i][j]);
+	}
+}
+
+
+int r2  , c2;
+printf("enter num of rows of matrix 2 : ");
+scanf("%d",&r2);
+
+printf("enter num of col of matrix 2 : ");
+scanf("%d",&c2);
+
+int b[r2][c2];
+
+printf("enter elements of matrix 1 \n");
+
+for(int i = 0; i < r2; i++)
+{
+	for(int j = 0; j < c2 ; j++)
+	{
+		scanf("%d",&b[i][j]);
+	}
+}
+
+int c[r1][c2];
+
+//initialize c to 0;
+
+for(int i = 0; i < r1 ; i++)
+{
+	for(int j = 0; j < c2 ; j++)
+	{
+		c[i][j] = 0;
+	}
+}
+
+
+
+
+//multiplying
+
+for(int i = 0; i < r1 ; i++)
+{
+	for(int j = 0; j < c2 ; j++)
+	{
+		for(int k = 0; k < r2 ; k++)
+		{
+			c[i][j] = c[i][j] + a[i][k] * b[k][j];
+		}
+	}
+}
+
+
+//printing
+
+for(int i = 0; i < r1 ; i++)
+{
+	for(int j = 0 ; j < c2 ; j++)
+	{
+		printf("%d ",c[i][j]);
+	}
+	
+	printf("\n");
+}
+ 
+ 
    return 0;
 			  }
- 
+
